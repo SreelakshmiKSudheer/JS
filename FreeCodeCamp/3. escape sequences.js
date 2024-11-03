@@ -1,0 +1,1 @@
+console.log("It\'s \"Sreelakshmi\'s Partner\"");
