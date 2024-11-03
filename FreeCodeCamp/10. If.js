@@ -1,6 +1,6 @@
 function test(val)
 {
-    if(val)
+    if(val == 12)
     {
         return "Equal";
     }
