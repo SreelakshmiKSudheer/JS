@@ -22,9 +22,18 @@
 let element = document.getElementById("main-heading");
 
 // changing content
-// function innerhtml(){
+function innerhtml(){
+    document.getElementById("main-heading").innerHTML = "Hi welcome again";
+}
 function textcontent(){
-    //document.getElementById("main-heading").innerHTML = "Hi welcome again";
     element.textContent = "Hi there";
 }
 
+// changing attribute
+function changeattribute(){
+    image = document.getElementById("image");
+    image.setAttribute("src", ".img/DKDM.jpeg");
+    image.setAttribute("alt","DKDM");
+}
+// changing style
+function
