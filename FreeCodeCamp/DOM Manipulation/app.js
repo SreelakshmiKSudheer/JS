@@ -36,4 +36,38 @@ function changeattribute(){
     image.setAttribute("alt","DKDM");
 }
 // changing style
-function
+function changeStyle(){
+    element.style.color = "cyan";
+    element.style.fontFamily = "poppins";
+    element.style.fontStyle = "italic";
+    document.getElementsByClassName(".container").classList.add("newContainer");
+}
+
+function create(){
+    let newItem = document.createElement("p");
+    newItem.textContent = "Naruto";
+    document.body.appendChild(newItem);     // add at the end
+    
+    
+    let newli = document.createElement("li");
+    newli.textContent = "Naruto";
+    let refele = document.getElementById("marvel");
+    refele.after(newli);
+    
+    newli = document.createElement("li");
+    newli.textContent = "Naruto shippuden";
+    refele = document.getElementById("matrix");
+    refele.before(newli);
+
+    document.getElementById("starwars").remove();       // remove an element
+    /*
+    ****** NOTE *******
+    while testing these remember to comment all those above
+    */
+
+}
+
+function eventer(){
+    let button = document.getElementsByTagName("button");
+    button[0].addEventListener("click", alert("Clicked"));
+}
