@@ -69,5 +69,11 @@ function create(){
 
 function eventer(){
     let button = document.getElementsByTagName("button");
-    button[0].addEventListener("click", alert("Clicked"));
+    //button[0].addEventListener("click", alert("Clicked"));
+
+    function handleClick(){
+        alert("Clicked");
+    }
+    button[0].removeEventListener("click",alert("Clicked"));
+
 }
